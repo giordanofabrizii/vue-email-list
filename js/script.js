@@ -39,8 +39,10 @@ function generateEmail(){
         axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
             .then( (response) => {
                 email = response.data.response;
-                this.arrayEmail.push(email)
+                console.log(email)
+                arrayEmail.push(email)
             });
     }
 }
 
+generateEmail()
