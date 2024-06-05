@@ -13,7 +13,7 @@
 <body>
     <main>
         <div id="app">
-            <ul>
+            <ul v-if="arrayEmail.length == 10"> <!-- stampa solo quando sono tutte le email -->
                 <li v-for="email in arrayEmail">
                     <p>{{email}}</p>
                 </li>
