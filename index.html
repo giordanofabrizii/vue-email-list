@@ -8,11 +8,17 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
 </head>
 <body>
-    <main id="app">
-        
+    <main>
+        <div id="app">
+            <ul>
+                <li v-for="email in arrayEmail">
+                    <p>{{email}}</p>
+                </li>
+            </ul>
+        </div>
     </main>
     
     <!-- Axios -->
